@@ -1,0 +1,32 @@
+.forgot_pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.forgot-mini-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+
+.forgot-header h3{
+    font-family: var(--last-font);
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.forgot-input{
+    width: 300px;
+    margin-top: 20px !important;
+}
+
+.forgot-btn{
+    display: block !important;
+    margin-top: 20px !important;
+}

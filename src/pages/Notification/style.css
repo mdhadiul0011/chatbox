@@ -1,0 +1,46 @@
+.notification-page{
+    width: 99%;
+    height: 100vh;
+    background: var(--primary-text-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+.notification-page span{
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.notify-box {
+    height: 85vh;
+    overflow-y: scroll;
+    margin-top: 15px;
+}
+
+.notifications{
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    background: var(--right-msg);
+    border-radius: 0;
+    border-bottom: 1px solid #18454A;
+
+}
+
+.notifications p{
+    font-family: var(--secondary-font);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.notifications span{
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--white-color);
+}

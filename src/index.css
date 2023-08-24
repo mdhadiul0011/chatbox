@@ -1,13 +1,64 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
+}
+
+ol, ul{
+  list-style-type: none;
+}
+
+:root{
+  --primary-font: 'Poppins', sans-serif;
+  --secondary-font: 'Nunito', sans-serif;
+  --last-font: 'Open Sans', sans-serif;
+  --primary-text-color: #18454A;
+  --secondary-text-color: #64699d;
+  --btn-color: #0081c9;
+  --border-color: #11175d;
+  --link-color: #ea6c00;
+  --error-color: red;
+  --white-color: #fff;
+  --black-color: #fff;
+  --online-color: greenyellow;
+  --body-color: #7CC1AC;
+  --right-msg: rgb(1, 43, 48);
+}
+
+body{
+  background: var(--body-color) ;
+}
+/* ==============primary css end================== */
+
+.main-reg-box{
+  height: 100vh;
+}
+
+.account p{
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.errors{
+  font-family: var(--last-font);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--error-color);
+  margin-bottom: 12px;
+}
+
+.alert {
+  margin-top: 100px;
+  background: #53CAFC !important;
+  color: var(--white-color) !important;
+  padding-left: 100px !important;
+  font-size: 15px !important;
 }

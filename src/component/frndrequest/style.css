@@ -1,0 +1,90 @@
+.Friendrequest-list{
+    width: 100%;
+    background: var(--primary-text-color);
+    margin-top: 20px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.Friendrequest-header{
+    background: #18454A;
+    position: fixed;
+    width: 26%;
+    padding-top: 30px;
+    margin-top: -19px;
+}
+
+.Friendrequest-header h3{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.Friendrequest-items-wrapper{
+    margin-top: 55px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Friendrequest-items-wrapper:last-child{
+    border-bottom: none;
+}
+
+/* .Friendrequest-item{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.Friendrequest-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.Friendrequest-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.Friendrequest-name {
+    margin-left: 106px;
+    margin-top: -71px;
+}
+
+.Friendrequest-name h4{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.Friendrequest-list-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 96px;
+    margin-top: 8px;
+}
+
+.Friendrequest-list-btn button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    padding: 8px 0;
+    color: var(--white-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.Friendrequest-list-btn button:last-child{
+    background: red;
+}

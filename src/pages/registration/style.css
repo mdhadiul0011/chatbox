@@ -1,0 +1,54 @@
+.reg-box2{
+    align-items: center !important;
+    height: 100vh !important;
+}
+
+.reg-left-part h3{
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+}
+
+.reg-left-part span{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.reg-input{
+    width: 70%;
+    margin-bottom: 16px !important;
+}
+
+.password-box{
+    position: relative;
+}
+
+.eyes{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.reg-btn{
+    width: 70%;
+    border-radius: 50px !important;
+    background: var(--btn-color) !important;
+    margin-top: 20px !important;
+}
+
+.reg-img{
+    width: 100% !important;
+}
+
+.loader{
+    margin: 0px !important;
+}

@@ -1,0 +1,76 @@
+.Friends-list{
+    width: 100%;
+    background: var(--primary-text-color);
+    height: 340px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.Friends-header h3{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.Friends-items-wrapper{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Friends-items-wrapper:last-child{
+    border-bottom: none;
+}
+
+/* .Friends-item{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.Friends-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.Friends-name {
+    margin-left: 106px;
+    margin-top: -71px;
+}
+
+.Friends-name h4{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.Friends-list-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 96px;
+    margin-top: 8px;
+}
+
+.Friends-list-btn button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    padding: 8px 0;
+    color: var(--white-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.Friends-list-btn button:last-child{
+    background: red;
+}

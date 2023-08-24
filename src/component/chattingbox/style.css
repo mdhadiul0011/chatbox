@@ -1,0 +1,348 @@
+.chatBox{
+    width: 100%;
+    height: 97.5vh;
+    background: var(--primary-text-color);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: -10px;
+}
+
+.active-users-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.users-img{
+    display: flex;
+    width: 50%;
+}
+
+.image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #000;
+    position: relative;
+}
+
+.image::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    width: 12px;
+    height: 12px;
+    background: var(--online-color);
+    border: 2px solid var(--white-color) ;
+}
+
+.info{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.info h3{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.info span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.icon{
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.message{
+    padding: 20px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.left-msg{
+    max-width: 500px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    background: var(--body-color);
+}
+
+.left-msg p{
+
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.left-box span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9c9c9;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.right-box{
+    text-align: right;
+}
+
+.right-msg{
+    max-width: 500px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background: var(--right-msg);
+    text-align: start;
+}
+
+.right-msg p{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.right-box span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #c9c9c9;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.left-box .left-img {
+    width: 300px;
+    overflow: hidden;
+}
+
+.left-box .left-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-box .right-img {
+    width: 300px;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.right-box .right-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.msg-input{
+    padding-top: 40px;
+    border-top: 1px solid var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.text-input{
+    margin-top: -15px;
+    padding: 10px 0;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 80%;
+    background: var(--right-msg);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.text-input input{
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    background: var(--right-msg);
+    color: var(--white-color);
+    font-size: 14px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    position: relative;
+}
+
+.options {
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    cursor: pointer;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 2px;
+    box-sizing: border-box;
+    right: -12px;
+}
+
+.more-options {
+    width: 39px;
+    height: 135px;
+    position: absolute;
+    top: -154px;
+    left: -5px;
+    background: var(--right-msg);
+    color: white;
+    border-radius: 15px;
+}
+
+.send-btn{
+    width: 15%;
+    border-radius: 15px;
+    background: var(--right-msg);
+    padding: 10px 10px;
+    border: none;
+    margin-top: -18px;
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.camera {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.gallary{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.gallary svg path{
+    fill: var(--white-color);
+}
+
+.voice{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.capture-img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background: rgba(0, 0, 0, 0.699);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+}
+
+.close svg path{
+    fill: var(--white-color);
+}
+
+.recording {
+    border-radius: 12px;
+    width: 300px;
+    transition: all .2s ease-out;
+    position: absolute;
+    top: 155px;
+    left: -400px;
+}
+
+.voiceRecorder{
+    z-index: 11;
+}
+
+.audio-recorder {
+    position: absolute;
+    bottom: -53px;
+    left: -60px;
+}
+
+.recording {
+    border-radius: 12px;
+    width: 750px !important;
+    transition: all .2s ease-out;
+    margin-left: 42px !important;
+    padding: 25px 0 !important;
+    margin-top: -15px !important;
+}
+
+.audio-btn{
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.audio-send-btn{
+    width: 15%;
+    border-radius: 15px;
+    background: var(--right-msg);
+    padding: 10px 10px;
+    border: none;
+    color: var(--white-color);
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.audio-delete-btn{
+    width: 15%;
+    border-radius: 15px;
+    background: var(--right-msg);
+    padding: 10px 10px;
+    border: none;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.emoji-part {
+    color: var(--white-color);
+    font-size: 25px;
+    z-index: 22;
+    position: relative;
+    top: 3px;
+    left: 4px;
+}
+
+.emoji-picker {
+    position: absolute;
+    top: -428px;
+    left: 204px;
+}
+
+.lotti-msg{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

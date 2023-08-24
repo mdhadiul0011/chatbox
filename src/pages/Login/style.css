@@ -1,0 +1,103 @@
+.log-box{
+    height: 100vh;
+    align-items: center;
+}
+
+.log-img{
+    width: 100%;
+}
+
+.log-right-part{
+    margin-left: 80px !important;
+}
+
+.log-input{
+    width: 70% !important;
+    margin-bottom: 18px !important;
+}
+
+.log-headline{
+    margin-bottom: 20px;
+    font-family: var(--last-font);
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.log-pass{
+    position: relative;
+}
+
+.log-eye{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+    cursor: pointer;
+}
+
+.log-btn{
+    width: 70%;
+    margin-top: 20px !important;
+    border-radius: 50px !important;
+    background: var(--btn-color) !important;
+}
+
+.login-img img {
+    width: 20%;
+    margin-left: 118px !important;
+}
+
+.account p a{
+    color: var(--link-color);
+    font-weight: 500;
+}
+
+.login-google, .login-facebook{
+    border: 2px solid var(--border-color);
+    width: 180px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.google-logo, .facebook-logo {
+    width: 15% !important;
+}
+
+.google-logo img, .facebook-logo img{
+    width: 100% !important;
+}
+
+.google-text, .facebook-text {
+    margin-left: 10px;
+}
+
+.google-text p, .facebook-text p{
+    font-family: var(--last-font);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.fpass{
+    display: block; 
+    text-align: center;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.fpass a{
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Primary-text-color);
+}
+
+.fpass a:hover{
+    text-decoration: underline;
+}

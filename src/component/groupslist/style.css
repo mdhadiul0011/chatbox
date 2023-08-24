@@ -1,0 +1,93 @@
+.Group-list{
+    width: 100%;
+    background: var(--primary-text-color);
+    margin-top: 20px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.Group-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Group-header h3{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.grpbtn button{
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: var(--btn-color);
+    color: var(--white-color);
+    border: none;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Groups-items-wrapper{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Groups-items-wrapper:last-child{
+    border-bottom: none;
+}
+
+.Groups-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Group-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.Group-name{
+    width: 55%;
+}
+
+.Group-name h4{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.Group-name span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.Group-list-btn{
+    width: 20%;
+}
+
+.Group-list-btn button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    padding: 8px 0;
+    color: var(--white-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+}

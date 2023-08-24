@@ -1,0 +1,79 @@
+.MsgGrp-list{
+    width: 100%;
+    background: var(--primary-text-color);
+    height: 290px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.MsgGrp-header h3{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.MsgGrp-items-wrapper{
+    width: 98%;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.MsgGrp-items-wrapper:last-child{
+    border-bottom: none;
+}
+
+.MsgGrp-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MsgGrp-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.MsgGrp-name{
+    width: 50%;
+    margin-left: 15px;
+}
+
+.MsgGrp-name h4{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+.MsgGrp-name p{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+.MsgGrp-name span{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.MsgGrp-list-btn button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    padding: 8px 0;
+    color: var(--white-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px;
+}

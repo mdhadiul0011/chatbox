@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { createRouter } from "@remix-run/router";
+import { useState } from "react";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import Rootlayout from "./Layout";
+import Forgot from "./pages/Forgotpassword";
+import Home from "./pages/Home";
+import Login from "./pages/Login/customize";
+import Registration from "./pages/registration/script";
+import Loggedin from "./PrivateRouter/Loggedinuser";
+import Notloggedin from "./PrivateRouter/Notloggedin";
+import MessageBox from "./pages/message";
+import Notification from "./pages/Notification";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const router = createBrowserRouter (createRoutesFromElements(
+  <Route>
+    <Route element={<Loggedin/>}>
+      <Route element={<Rootlayout/>}>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/MessageBox" element={<MessageBox />}></Route>
+        <Route path="/Notification" element={<Notification />}></Route>
+      </Route>
+    </Route>
+    <Route element={<Notloggedin/>}>
+    <Route path="/registration" element={<Registration/>}></Route>
+    <Route path="/login" element={<Login/>}></Route>
+    <Route path="/forgotpassword" element={<Forgot/>}></Route>
+    </Route>
+
+  </Route>
+))
+  return(
+    <>
+    <RouterProvider router={router}></RouterProvider>
+    
+    </>
   );
 }
 

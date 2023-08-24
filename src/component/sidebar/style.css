@@ -1,0 +1,130 @@
+.sidebar{
+    width: 102%;
+    height: 100vh;
+    background: var(--primary-text-color);
+    padding: 15px 0 ;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.profile-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 12px;
+    position: relative;
+}
+
+.profile-pic .profile_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.459);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+.profile_overlay svg{
+    fill: var(--white-color);
+    font-size: 30px;
+}
+
+.profile-pic:hover .profile_overlay{
+    opacity: 1;
+}
+
+.profile-pic img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.sidebar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebar-icon{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    position: relative;
+}
+
+.sidebar-icon.active:after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 103px;
+    height: 75px;
+    background: #FFF;
+    z-index: 1;
+    opacity: 1;
+}
+
+.sidebar-icon.active:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 8px;
+    height: 75px;
+    background: #18454A;
+    z-index: 2;
+    opacity: 1;
+}
+
+.sidebar-icon svg{
+    width: 35px;
+    height: 35px;
+    z-index: 33;
+}
+
+.sidebar-icon svg path{
+    fill: var(--white-color);
+}
+
+.sidebar-icon.active svg path{
+    fill: var(--primary-text-color);
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+}
+
+.logout svg {
+    width: 35px;
+    height: 35px;
+}
+
+.logout svg path{
+    fill: #fff;
+}
+
+.display_name{
+    font-family: var(--primary-font);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 14px;
+}

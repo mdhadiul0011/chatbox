@@ -1,0 +1,75 @@
+.Blockuser-list{
+    width: 100%;
+    background: var(--primary-text-color);
+    margin-top: 20px;
+    height: 280px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    margin-left: -5px;
+}
+
+.Blockuser-header h3{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.Blockuser-items-wrapper{
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.Blockuser-items-wrapper:last-child{
+    border-bottom: none;
+}
+
+.Blockuser-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Blockuser-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+
+.Blockuser-name{
+    width: 55%;
+}
+
+.Blockuser-name h4{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.blocked{
+    margin-left: -180px;
+}
+
+.Blockuser-list-btn{
+    width: 20%;
+}
+
+.Blockuser-list-btn button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-color);
+    padding: 8px 0;
+    color: var(--white-color);
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
